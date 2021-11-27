@@ -1,0 +1,67 @@
+.bg-body{
+  
+}
+.create-new-account-bg {
+    background-color: #44312b;
+    padding:40px 10px;
+}
+
+.create-new-account-text {
+    text-align: center;
+    color: #fff;
+}
+.create-new-account-text h3 {
+    margin: 0px;
+    font-size: 26px;
+    font-weight: 400;
+}
+.create-new-account-text p {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.registration-page-form{
+    padding:0px 20px 20px;
+}
+
+.form-field{
+      margin-top: 15px;
+}
+.form-field ion-input {
+    // border: 1px solid #ccc;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 5px 20px !important;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+    background-color: #ececec;
+}
+.form-field input {
+    // padding: 8px 15px !important;
+}
+
+.ion-label-text{
+    margin-left: 25px;
+    color: #999;
+    letter-spacing: 2px;
+}
+.norbel-btn {
+    padding: 0px;
+    height: 50px;
+    border-radius: 30px !important;
+    overflow: hidden;
+    --background: #e8dece;
+    color: #000;
+    max-width: 260px;
+    margin: 20px auto 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+.forgot-password{
+    text-align: center;
+    margin: 20px;
+    color: #333;  
+}

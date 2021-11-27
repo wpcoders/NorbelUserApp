@@ -1,0 +1,74 @@
+<ion-content>
+
+  <div class="create-new-account-bg">
+    <div class="create-new-account-text">
+      <h3>Create new Account</h3>
+      <p>Already Registered? <span (click)="doLogin()">Login</span></p>
+    </div>
+  </div>
+
+  <form (submit)="doRegistration(registrationForm.value)" [formGroup]="registrationForm">
+  
+  <div class="registration-page-form">
+    <ion-list>
+      <ion-item lines="none" class="form-field ion-no-padding"  style="--inner-padding-end: 0 !important;">
+        <ion-label position="stacked" class="ion-label-text">NAME</ion-label>
+        <ion-input placeholder="Please enter your name" formControlName="name" required></ion-input>
+      </ion-item>
+      <div no-lines *ngIf="( registrationForm.get('name').hasError('required') ) && registrationForm.get('name').touched">
+        <div class="error">
+          Please enter name
+        </div>
+      </div>
+
+
+      <ion-item lines="none" class="form-field ion-no-padding"  style="--inner-padding-end: 0 !important;">
+        <ion-label position="stacked"  class="ion-label-text"> EMAIL</ion-label>
+        <ion-input placeholder="hello@reallygreatsite.com" formControlName="email" required></ion-input>
+      </ion-item>
+      <div no-lines *ngIf="( registrationForm.get('email').hasError('required') ) && registrationForm.get('email').touched">
+        <div class="error">
+          Please enter email
+        </div>
+      </div>
+
+
+      <ion-item lines="none" class="form-field ion-no-padding"  style="--inner-padding-end: 0 !important;">
+        <ion-label position="stacked" class="ion-label-text">PASSWORD</ion-label>
+        <ion-input type="password" placeholder="Password" formControlName="password" required></ion-input>
+      </ion-item>
+      <div no-lines *ngIf="( registrationForm.get('password').hasError('required') ) && registrationForm.get('password').touched">
+        <div class="error">
+          Please enter password
+        </div>
+      </div>
+
+
+
+      <ion-item lines="none" class="form-field ion-no-padding"  style="--inner-padding-end: 0 !important;">
+        <ion-label position="stacked"  class="ion-label-text">DATE OF BIRTH</ion-label>
+        <!-- <ion-input placeholder="Date of birth" formControlName="dob" required></ion-input> -->
+        <ion-datetime  placeholder="Date of birth"  display-timezone="utc" value="2019-10-01" formControlName="dob"  [(ngModel)]="dobDate"  (ionChange)="date(dobDate)" required></ion-datetime>
+            
+      </ion-item>
+    </ion-list>
+    <div no-lines *ngIf="( registrationForm.get('dob').hasError('required') ) && registrationForm.get('name').touched">
+      <div class="error">
+        Please enter date of birth
+      </div>
+    </div>
+
+
+    <ion-list style="padding:0px !important;">
+      <ion-item class="agree-text" lines="none" style="  text-align: center;" >
+        <ion-label  class="ion-text-wrap" (click)="doPrivacyPolicy()">I agree to the terms and conditions and privacy policy</ion-label>
+      </ion-item>
+      <ion-checkbox style="    margin-top: 30px;" slot="end"  checked="false" (ionChange)="getPrivacyPolicy($event)" ></ion-checkbox>
+    </ion-list>
+
+    <ion-button expand="block" class="norbel-btn" type="submit">Sign up</ion-button>
+  </div>
+
+</form>
+
+</ion-content>

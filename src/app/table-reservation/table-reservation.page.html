@@ -1,0 +1,95 @@
+<ion-header class="norbel-header">
+  <ion-toolbar>
+    <ion-title>Norbel</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item lines="none" class="page-title-box  ion-no-padding"  style="--inner-padding-end: 0 !important;">
+    <ion-label>
+      Brewed Down
+    </ion-label>
+  </ion-item>
+
+  <div class="page-pad-box">
+
+<div class="add-cafe-content">
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col size="6">
+        <div class=" brewed-down-loader">
+          <!-- <img src="assets/img/brewed-down-loader.jpg"> -->
+          <figure class="pie-chart">
+            <img src="assets/img/logo-brewed-down.jpg" class="loader-logo-img">
+          </figure>
+       </div>
+      </ion-col>
+      <ion-col size="6">
+        <h3 class="text-center">Almost there.</h3>
+          <ion-label class="text-center">  You’re only 6
+          coffees away
+          from your next freebie!
+          </ion-label>
+      </ion-col>
+   
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button expand="block" class="scan-open-btn" (click)="doQrCode()">Scan Code</ion-button>
+      </ion-col>
+      <ion-col size="6">
+      <ion-button expand="block" class="scan-open-btn" (click)="doCafeMenu()">Open Menu</ion-button>
+      </ion-col>   
+    </ion-row>
+  </ion-grid>
+
+  <ion-card class="card-box">    
+    <ion-card-content class=" ion-no-padding">
+      <ion-row>
+        <ion-col size="3">
+          <div class="offer-img">
+            <img src="assets/img/offer-img.png">
+          </div>
+        </ion-col>
+        <ion-col size="9">
+          <div class="offer-box">
+          <h1 class="offer-box-title mrg-b-1">10% off all cakes</h1>
+            <small>Expires 30/08/2021</small>
+            <small>Offer terms and conditions apply </small>
+          </div>
+        </ion-col>   
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card class="card-box reserve-table">    
+    <ion-card-content class="ion-no-padding">
+      <ion-row>
+        <ion-col size="12">       
+            <h1 class="offer-box-title">Your Reserved Table</h1>          
+        </ion-col>
+        </ion-row>
+        <ion-row>
+        <ion-col size="12">
+          <ion-label style="text-align: center;">1 Person,</ion-label>
+          <ion-label style="text-align: center;">1:30pm Saturday 24 August </ion-label>
+        </ion-col>
+        <ion-col size="12">
+           <ion-button expand="block" class="cancel-booking-btn">Cancel booking</ion-button>                    
+        </ion-col>   
+      </ion-row>      
+    </ion-card-content>
+  </ion-card>
+  </div>
+  </div>
+
+</ion-content>
+
+<!-- <ion-footer class="page-footer-box">
+  <ion-button expand="block" class="norbel-btn" ></ion-button>
+</ion-footer> -->

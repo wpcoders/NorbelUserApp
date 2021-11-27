@@ -1,0 +1,264 @@
+
+// .add-cafe-content{
+//     text-align: center;
+//   }
+
+  h1.title-h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin:  0px;
+  }
+  .add-cafe-content ion-label {
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 5px;
+  }
+  .brewed-down-logo-box {
+    margin: 30px auto;
+    width: 150px;
+  }
+  
+  
+  .page-footer-box {
+    background-color: #44312b;
+    padding: 15px;
+  }
+  .page-footer-box .norbel-btn {
+    margin: 0px auto ;
+  }
+
+
+  .scan-open-btn{
+
+    padding: 0px;
+    height: 50px;
+    border-radius: 10px !important;
+    overflow: hidden;
+    --background: #44312b;
+    color: #fff;
+    max-width: 180px;
+    margin: 0px auto;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+  }
+
+  .offer-box {
+    text-align: right;
+}
+  .offer-box-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #000;   
+  }
+  .offer-box small {
+    display: block;
+    font-size: 9px;
+    color: #000;
+}
+
+.reserve-table ion-label {
+    font-size: 14px !important;
+    color: #000;
+    margin: 0px !important;
+}
+
+.people-counter {
+    background-color: #d1be9e;
+    padding: 0px 5px;
+    border-radius: 8px;
+}
+.people-counter ion-label {
+    font-size: 12px !important; 
+    text-align: center;  
+    font-weight: 700;
+}
+.cancel-booking-btn {
+  padding: 0px;
+  height: 35px;
+  border-radius: 10px !important;
+  overflow: hidden;
+  --background: #d1be9e;
+  color: #000;
+  max-width: 360px;
+  margin: 0px auto;
+  text-transform: capitalize;
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.date-pic-box
+{    padding: 0;
+  text-align: center;
+  color: #000;}
+  
+.loader-logo-img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    max-width: 70px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 7px auto 0px;
+
+}
+
+
+
+.offer-img-box-22 {
+  width: 70px;
+  float: left;
+}
+.offer-info-box-22 {
+  width: calc(100% - 70px);
+  float: left;
+}
+
+.redeem-btn-box {
+  display: inline-block;
+}
+.redeem-btn {
+  width: 73px;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 3px !important;
+  --background: #44312b;
+}
+
+.small-text-box-redeem {
+  float: right !important;
+  margin-top: 10px;
+}
+.offer-img {
+  // margin-top: 10px;
+}
+.offer-box{
+
+}
+
+.offer-img img {
+  height: 100%;
+  object-fit: cover;
+  padding: 3px;
+}
+.offer-img {
+  height: 60px;
+}
+
+// .offer-scroll-box{
+//   white-space: nowrap;
+//   overflow-y: hidden;
+//   overflow-x: scroll;
+//   -webkit-overflow-scrolling: touch;
+
+// }
+.offer-scroll-card{
+  max-height: 80px;
+ 
+}
+
+.offer-scroll-box ion-slide{
+  width: 100% !important;
+  display: block;
+}
+
+.error-bg-22{
+
+  padding: 15px 10px;
+}
+.error-bg-22 p{
+color: #fff;
+margin: 0px;
+}
+
+// =========================================
+
+
+@supports( -webkit-appearance: none){
+
+  progress.pie {
+    margin: 20px auto 0px;
+    display: block;
+    transform: rotate(210deg)
+}
+
+  progress{
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+            appearance: none;
+  }
+
+ 
+  ::-webkit-progress-inner-element, ::-webkit-progress-bar, ::-webkit-progress-value{
+    display:none;
+  }
+  .pie:after{
+    background-blend-mode: lighten;
+    content:attr(value) "";
+    position:absolute; 
+    top:12px;
+    right:12px;
+    bottom:12px;
+    left:12px;
+    border-radius:50%;
+    background: white;
+    color:black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1rem;
+    font-weight:700;
+  }
+
+  .pie {
+    --progress:0;
+    position: relative;
+    width: 130px;
+     height:130px;
+    border-radius: 50%;
+    background-color: #e8dece;
+    background-image:
+      linear-gradient(to right, transparent 50%, #44312b  0);
+    color: transparent;
+    text-align: center;
+    animation-delay:calc(var(--progress)*-1s);
+  }
+
+  @keyframes spin {
+    to { transform: rotate(.5turn); }
+  }
+  @keyframes bg {
+    50% { background: #44312b ; }
+  }
+  .pie::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%;
+    width: 50%; height: 100%;
+    border-radius: 0 100% 100% 0 / 50%;
+    background-color: inherit;
+    transform-origin: left;
+    animation: spin 50s linear infinite,
+    bg 100s step-end infinite;
+    animation-play-state: paused;
+    animation-delay: inherit;
+    animation-fill-mode: forwards;
+  } 
+  
+  .pie[value="100"]{ 
+    animation-delay: -99.9s;
+  }
+  
+}
+
+
+

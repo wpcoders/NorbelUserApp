@@ -1,0 +1,97 @@
+<ion-header class="norbel-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button class="menu-icon-2"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Norbel</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item lines="none" class="page-title-box  ion-no-padding"  style="--inner-padding-end: 0 !important;">
+    <ion-label>
+      {{cafe_name}}
+    </ion-label>
+  </ion-item>
+  <div class="page-pad-box">
+    <h1 class="title-h1 mrg-b-1">Menu</h1>      
+  
+    <ion-card class="menu-list-box" *ngFor = "let item of menuData">  
+      <div class="menu-name">
+        <p>{{item.menu_name}}</p>
+      </div>  
+    <ion-card-content class="ion-no-padding">
+      <ion-row>
+        <ion-col size="6"  *ngFor = "let subitem of item.products">
+        <div class="product-box">
+          <div class="menu-img">
+            <img [src]="imagePath+subitem.product_image">
+          </div>
+          <h3 class="product-name">{{subitem.product_name}}</h3>
+          <p>{{subitem.product_description}}</p>
+          <p class="mrg-t-1 font-bold" ><span  *ngFor = "let variantitem of subitem.variant">{{variantitem.variant_name}}-${{variantitem.variant_price}}</span> &nbsp; </p>
+        </div>
+        </ion-col>
+        <!-- <ion-col size="6">
+          <div class="product-box">
+            <div class="menu-img">
+              <img src="assets/img/coffe-2.jpg">
+            </div>
+            <h3 class="product-name">Latte</h3>
+            <p>A beautiful mixture of espresso and perfectly steamed milk.</p>
+            <p class="mrg-t-1 font-bold"><span>S-$3</span> &nbsp; <span>M-$4</span> &nbsp; <span>L-$5</span></p>
+          </div>
+          </ion-col> -->
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+
+  <!-- <ion-card class="menu-list-box">  
+    <div class="menu-name">
+      <p>Lunch</p>
+    </div>  
+  <ion-card-content class="ion-no-padding">
+    <ion-row>
+      <ion-col size="6">
+      <div class="product-box">
+        <div class="menu-img">
+          <img src="assets/img/coffe-1.jpg">
+        </div>
+        <h3 class="product-name">Cappucino</h3>
+        <p>A beautiful mixture of espresso and perfectly steamed milk.</p>
+        <p class="mrg-t-1 font-bold"><span>S-$3</span> &nbsp; <span>M-$4</span> &nbsp; <span>L-$5</span></p>
+      </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="product-box">
+          <div class="menu-img">
+            <img src="assets/img/coffe-2.jpg">
+          </div>
+          <h3 class="product-name">Latte</h3>
+          <p>A beautiful mixture of espresso and perfectly steamed milk.</p>
+          <p class="mrg-t-1 font-bold"><span>S-$3</span> &nbsp; <span>M-$4</span> &nbsp; <span>L-$5</span></p>
+        </div>
+        </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card> -->
+
+    
+
+
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-button expand="block" class="scan-open-btn" (click)="doBack()">Back</ion-button>
+      </ion-col>    
+    </ion-row>
+  </ion-grid>
+  </div>
+
+</ion-content>
+<!-- 
+<ion-footer class="page-footer-box">
+  <ion-button expand="block" class="norbel-btn" ></ion-button>
+</ion-footer> -->

@@ -1,0 +1,39 @@
+<ion-header class="norbel-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button class="menu-icon-2"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Norbel</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item lines="none" class="page-title-box  ion-no-padding"  style="--inner-padding-end: 0 !important;">
+    <ion-label>  My Account </ion-label>
+  </ion-item>
+  <div class="page-pad-box">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="booking-success-box"> 
+        <ion-label class="mrg-b-1">Notifications settings</ion-label> 
+        <ion-item lines="none" class="receive-notifications">
+          <ion-label class="text-center">Receive Notifications</ion-label>
+          <ion-toggle [(ngModel)]="receiveNotification" (ionChange)="receiveNotificationEvent($event)"></ion-toggle>
+        </ion-item>
+        
+        <p class="text-center"><small>Note: Turning notifications off may mean you miss some of the best offers our cafe partners provide.</small></p>    
+        <ion-label class="mrg-b-3 mrg-t-3">Account Deletion</ion-label>
+        <p class="text-center">At your request, we will permenantly delete your account and its data from our servers. We will do this in accordance with our privacy policy.</p>      
+        <ion-button expand="block" class="delete-account-btn" (click)="presentConfirm()"> Delete my Account </ion-button>
+        <p class="text-center">THIS ACTION CAN NOT BE REVERSED.</p>      
+       
+      </ion-col>    
+    </ion-row>
+    </ion-grid>    
+
+  </div>
+
+</ion-content>
+
+<!-- <ion-footer class="page-footer-box">
+  <ion-button expand="block" class="norbel-btn" ></ion-button>
+</ion-footer> -->

@@ -1,0 +1,63 @@
+.page-footer-box {
+    background-color: #44312b;
+    padding: 15px;
+}
+.page-footer-box .norbel-btn {
+    margin: 0px auto ;
+}
+.scan-open-btn{
+    padding: 0px;
+    height: 50px;
+    border-radius: 10px !important;
+    overflow: hidden;
+    --background: #44312b;
+    color: #fff;
+    max-width: 130px;
+    margin: 0px auto;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+.offer-box-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;   
+    text-align: center;
+}    
+.booking-success-box ion-label {
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 15px;
+    // text-align: center;
+}
+.title-contact{
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;   
+    line-height: 32px; 
+    margin: 0px;
+}
+
+.delete-account-btn{}
+.text-center {
+    text-align: center;
+}
+.delete-account-btn {
+    --background: #f00;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.receive-notifications{}
+
+ion-toggle {
+    --background: #9e9e9e;
+    --background-checked: #44312b;  
+    --handle-background: #fff;
+    --handle-background-checked: #fff;
+    height: 26px;
+    width: 46px;
+  }

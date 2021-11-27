@@ -1,0 +1,115 @@
+
+// .add-cafe-content{
+//     text-align: center;
+//   }
+
+h1.title-h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin:  0px;
+  }
+  .add-cafe-content ion-label {
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 5px;
+  }
+  .brewed-down-logo-box {
+    margin: 30px auto;
+    width: 150px;
+  }
+  
+  
+  .page-footer-box {
+    background-color: #44312b;
+    padding: 15px;
+  }
+  .page-footer-box .norbel-btn {
+    margin: 0px auto ;
+  }
+
+  .scan-open-btn{
+    padding: 0px;
+    height: 50px;
+    border-radius: 10px !important;
+    overflow: hidden;
+    --background: #44312b;
+    color: #fff;
+    max-width: 180px;
+    margin: 0px auto;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+  }
+
+  .offer-box {
+    text-align: right;
+}
+  .offer-box-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #000;   
+  }
+  .offer-box small {
+    display: block;
+    font-size: 9px;
+    color: #000;
+}
+
+.reserve-table ion-label {
+    font-size: 16px !important;
+    color: #000;
+    margin: 0px !important;
+}
+
+.people-counter {
+    background-color: #d1be9e;
+    padding: 0px 5px;
+    border-radius: 8px;
+}
+.people-counter ion-label {
+    font-size: 14px !important; 
+    text-align: center;  
+}
+.cancel-booking-btn {
+    padding: 0px;
+    height: 35px;
+    border-radius: 10px !important;
+    overflow: hidden;
+    --background: #d1be9e;
+    color: #000;
+    max-width: 360px;
+    margin: 0px auto;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+
+.open-now-text{
+    font-size: 16px;
+    font-weight: 700;
+    
+    margin: 0px;
+    text-align: right;
+}
+
+.closed-now-text{
+        color: #ff0000;
+}
+
+.cafe-details h5{
+    font-size: 14px;
+    font-weight: 700; 
+    color: #000;
+    text-align: center;
+}
+.cafe-details p{
+    font-size: 10px;  
+   color: #000;
+   text-align: center;
+}

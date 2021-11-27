@@ -1,0 +1,60 @@
+.reservation-title-box {
+    --background: #940a0a; 
+}
+
+.reservation-title-box ion-label {   
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color:#fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.stapm-code-box{
+    text-align: center;
+    margin: 30px;
+}
+.click-scan-code h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    line-height: 46px;
+    margin-top: 10px;
+    text-align: center;   
+}
+.code-manually{
+    position: absolute;   
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    right: 0;
+}
+.code-manually p{
+    text-align: center;
+    font-size: 14px;
+    color: #000; 
+    padding: 0px 10px;  
+}
+
+.scan-open-btn{
+    padding: 0px;
+    height: 50px;
+    border-radius: 10px !important;
+    overflow: hidden;
+    --background: #44312b;
+    color: #fff;
+    max-width: 130px;
+    margin: 0px auto;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+
+.booking-success-box  ion-label  {
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+}

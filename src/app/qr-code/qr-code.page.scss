@@ -1,0 +1,42 @@
+.page-footer-box {
+background-color: #44312b;
+padding: 15px;
+}
+.page-footer-box .norbel-btn {
+margin: 0px auto ;
+}
+.scan-open-btn{
+padding: 0px;
+height: 50px;
+border-radius: 10px !important;
+overflow: hidden;
+--background: #44312b;
+color: #fff;
+max-width: 130px;
+margin: 0px auto;
+text-transform: capitalize;
+font-size: 16px;
+letter-spacing: 0;
+font-weight: 700;
+}
+.qr-code-box img {
+    text-align: center;
+    margin: 0px auto;
+    width: 100%;
+}
+.qr-code-box {
+    width: 100%;
+    text-align: center;
+    max-width: 350px;
+    margin: 0px auto;
+}
+.qr-code-ngx img {
+    width: 100% !important;
+}
+.your-code{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    margin: 10px 0px;
+}

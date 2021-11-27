@@ -1,0 +1,212 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+    
+.mrg-0{
+    margin: 0px !important;
+}
+.mrg-t-1{
+    margin-top: 10px !important;
+}
+.mrg-t-15{
+    margin-top: 15px !important;
+}
+   
+.mrg-t-2{
+    margin-top: 20px !important;
+}
+
+.mrg-t-3{
+    margin-top: 30px !important;
+}
+
+.mrg-t-4{
+    margin-top: 40px !important;
+}
+
+.mrg-t-5{
+    margin-top: 50px;
+}
+// ======================================
+.mrg-b-1{
+    margin-bottom: 10px !important;
+}
+.mrg-b-15{
+    margin-bottom: 15px !important;
+}
+   
+.mrg-b-2{
+    margin-bottom: 20px !important;
+}
+
+.mrg-b-3{
+    margin-bottom: 30px !important;
+}
+
+.mrg-b-4{
+    margin-bottom: 40px !important;
+}
+
+.mrg-b-5{
+    margin-bottom: 50px;
+}
+
+ion-content.side-menu-list {
+    --background: #44312b;
+}
+.side-menu-list ion-list {
+    padding: 20px;
+    background-color: transparent !important;
+}
+
+.side-menu-item {
+    --background: #e8dece !important;
+    border-radius: 30px !important;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-menu-tabs {
+    --background: #44312b;
+    height: 80px;
+}
+.tabs-icon {
+    font-size: 22px;
+    color: #44312b;
+    background-color: #fff;
+    width: 40px;
+    padding: 4px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+
+.footer-menu-tabs
+  ion-tab-button {
+    --color: var(--ion-color-medium);
+    --color-selected: #fff;
+    position: relative;
+  
+    &::before {
+        background-color: transparent;
+        display: block;
+        content: "";
+        margin: 0 auto;
+        width: 40px;
+        position: absolute;
+        height: 4px;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        border-radius: 15px;
+    }
+
+  
+    &.tab-selected::before {
+      background-color: #fff;
+    }
+  }
+
+
+
+.font-bold{
+    font-weight: 700 !important;
+}
+
+
+.norbel-header ion-toolbar {
+    --background: #44312b;
+}
+.norbel-header ion-title {
+    text-align: center;
+    color: #ffff;
+    font-size: 20px;
+}
+.page-pad-box{
+    padding:20px 20px;
+}
+
+.page-title-box {
+    --background: #e8dece;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+}
+.page-title-box ion-label {
+    padding: 5px 10px;
+}  
+
+.norbel-btn {
+    padding: 0px;
+    height: 50px;
+    border-radius: 30px !important;
+    overflow: hidden;
+    --background: #e8dece;
+    color: #000;
+    max-width: 260px;
+    margin: 20px auto 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+
+.norbel-btn-square {
+    border-radius: 10px !important;
+}
+
+
+.card-box {
+    background-color: #e8dece;
+    border: 2px solid #44312b;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+
+.title-h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin:  0px;    
+    font-family: 'Open Sans', sans-serif;
+  }
+  .error {
+    color: red !important;
+    margin-top: 8px !important;
+}
+.menu-icon-2{
+    --color: #fff;
+    }
+    .qr-code-ngx img {
+        width: 100% !important;
+    }
+    .menu-icon-2 {
+        position: absolute;
+    }

@@ -1,0 +1,30 @@
+<ion-header class="norbel-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button class="menu-icon-2"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Norbel</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item lines="none" class="page-title-box  ion-no-padding"  style="--inner-padding-end: 0 !important;">
+    <ion-label> {{cafe_name}} </ion-label>
+  </ion-item>
+  <div class="page-pad-box">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <div class="notification-content"> 
+              <ion-label [innerHTML]="banner_info"></ion-label>
+              <!-- <ion-label> As of 30 August 2021, their cafe page will be deleted and all access to their materials deleted.</ion-label>      
+              <ion-label> Unfortunately, this means any unredeemed stamps will be unavailable past this date. As per the terms and conditions, after this announcement is made you will be unable to earn new coffee stamps but can redeem previosuly earned stamps up until the deletion date.   </ion-label>
+              <ion-label class="mrg-t-3"> Norbel wishes them the best in their future ventures.</ion-label> -->
+          </div>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+<!-- <ion-footer class="page-footer-box">
+  <ion-button expand="block" class="norbel-btn" (click)="doBrewedDown()">sure</ion-button>
+</ion-footer> -->

@@ -1,0 +1,38 @@
+ion-content {
+    .no-network-box {
+      width: 100%;
+      margin-top: 50%;
+    }
+    .no-network-img {
+      border-radius: 50%;
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding: 10px;
+      overflow: hidden;
+      margin: 20px auto 20px;
+      width: 150px;
+      height: 150px;
+      animation: zoominoutsinglefeatured 3s infinite;
+    }
+  
+    @keyframes zoominoutsinglefeatured {
+      0% {
+        transform: scale(1, 1);
+      }
+      50% {
+        transform: scale(1.2, 1.2);
+      }
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+  
+    p.network-img-text {
+      font-size: 24px;
+      text-align: center;
+      margin: 20px 0px;
+      color: #1a3744;
+      font-weight: 600;
+    }
+  }
+  

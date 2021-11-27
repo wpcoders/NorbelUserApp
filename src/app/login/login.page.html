@@ -1,0 +1,44 @@
+<ion-content>
+
+  <div class="create-new-account-bg">
+    <div class="create-new-account-text">
+      <h3>Login</h3>
+      <p (click)="doRegistration()">Sign in to continue</p>
+    </div>
+  </div>
+
+  <div class="registration-page-form">
+    <form (submit)="doLogin(loginForm.value)" [formGroup]="loginForm">
+    <ion-list>    
+      <ion-item lines="none" class="form-field ion-no-padding"  style="--inner-padding-end: 0 !important;">
+        <ion-label position="stacked"  class="ion-label-text"> PLEASE ENTER YOUR EMAIL</ion-label>
+        <ion-input placeholder="hello@reallygreatsite.com" formControlName="email" required></ion-input>
+      </ion-item>
+
+      <div no-lines *ngIf="( loginForm.get('email').hasError('required') ) && loginForm.get('email').touched">
+        <div class="error">
+          Please Enter email
+        </div>
+      </div>
+
+      <ion-item lines="none" class="form-field ion-no-padding"  style="--inner-padding-end: 0 !important;">
+        <ion-label position="stacked" class="ion-label-text">PLEASE ENTER YOUR PASSWORD</ion-label>
+        <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+      </ion-item>
+
+      <div no-lines *ngIf="( loginForm.get('password').hasError('required') ) && loginForm.get('password').touched">
+        <div class="error">
+          Please Enter password
+        </div>
+      </div>
+    </ion-list>
+
+
+    <ion-button expand="block" class="norbel-btn"  type="submit">Login</ion-button>
+</form>
+    <p class="forgot-password" (click)="doForgotPassword()">Forgot Password?</p>
+  </div>
+
+
+
+</ion-content>

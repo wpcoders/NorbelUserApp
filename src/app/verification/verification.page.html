@@ -1,0 +1,51 @@
+<ion-header class="norbel-header">
+  <ion-toolbar>
+    <ion-title>Norbel</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button class="menu-icon-2"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item lines="none" class="page-title-box  ion-no-padding"  style="--inner-padding-end: 0 !important;">
+    <ion-label>
+      Add a Cafe
+    </ion-label>
+  </ion-item>
+
+  <div class="page-pad-box">
+<div class="add-cafe-content">
+    <h1 class="title-h1">  At a Cafe?</h1>
+    <ion-label>  Enter it’s unique code below:</ion-label>
+    <div class="code-box">
+      <!-- <ion-input value="" maxlength="1" class="ion-no-padding" [(ngModel)]="codeOne"></ion-input>
+      <ion-input value="" maxlength="1" class="ion-no-padding" [(ngModel)]="codeTwo"></ion-input>
+      <ion-input value="" maxlength="1" class="ion-no-padding" [(ngModel)]="codeThree"></ion-input>
+      <ion-input value="" maxlength="1" class="ion-no-padding" [(ngModel)]="codeFour"></ion-input> -->
+      <ion-row text-center>
+        <ion-col>
+         <ion-input #otp1 required maxLength="1" [(ngModel)]="codeOne" (keyup)="otpController($event,otp2,'')">
+         </ion-input>
+         <ion-input #otp2 required maxLength="1" [(ngModel)]="codeTwo" (keyup)="otpController($event,otp3,otp1)">
+         </ion-input>
+         <ion-input #otp3 required maxLength="1" [(ngModel)]="codeThree" (keyup)="otpController($event,otp4,otp2)">
+         </ion-input>
+         <ion-input #otp4  required maxLength="1" [(ngModel)]="codeFour" (keyup)="otpController($event,'',otp3)">
+         </ion-input>
+        </ion-col>
+      </ion-row>
+    </div>
+    <ion-button expand="block" class="norbel-btn  norbel-btn-square" (click)="doAddCafe()">ADD CAFE</ion-button>
+    <div class="dotted-border"></div>
+
+    <h1 class="title-h1">  At Home?</h1>
+
+<div class="button-box">FIND YOUR FAVOURITE COFFEE SHOP</div>
+
+    <!-- <ion-button  text-wrap expand="block" class="norbel-btn  norbel-btn-square" >FIND YOUR FAVOURITE COFFEE SHOP
+    </ion-button> -->
+
+  </div>
+  </div>
+
+</ion-content>

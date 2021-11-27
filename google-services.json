@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "949321560493",
+    "project_id": "norbel-c1f72",
+    "storage_bucket": "norbel-c1f72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949321560493:android:def7ffdfcb064c92c63124",
+        "android_client_info": {
+          "package_name": "io.norbel.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949321560493-k4rdknjfgju3siiubkqfnumb9dt64d2u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_pemqp8GsqA1bvt8CrIOoDngojKm2FIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949321560493-k4rdknjfgju3siiubkqfnumb9dt64d2u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

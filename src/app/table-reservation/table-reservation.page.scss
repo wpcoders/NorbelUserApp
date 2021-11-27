@@ -1,0 +1,148 @@
+
+// .add-cafe-content{
+//     text-align: center;
+//   }
+
+h1.title-h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin:  0px;
+  }
+  .add-cafe-content ion-label {
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 5px;
+  }
+  .brewed-down-logo-box {
+    margin: 30px auto;
+    width: 150px;
+  }
+  
+  
+  .page-footer-box {
+    background-color: #44312b;
+    padding: 15px;
+  }
+  .page-footer-box .norbel-btn {
+    margin: 0px auto ;
+  }
+
+  .scan-open-btn{
+    padding: 0px;
+    height: 50px;
+    border-radius: 10px !important;
+    overflow: hidden;
+    --background: #44312b;
+    color: #fff;
+    max-width: 180px;
+    margin: 0px auto;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+  }
+
+  .offer-box {
+    text-align: right;
+}
+  .offer-box-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #000;   
+  }
+  .offer-box small {
+    display: block;
+    font-size: 9px;
+    color: #000;
+}
+
+.reserve-table ion-label {
+    font-size: 16px !important;
+    color: #000;
+    margin: 0px !important;
+}
+
+.people-counter {
+    background-color: #d1be9e;
+    padding: 0px 5px;
+    border-radius: 8px;
+}
+.people-counter ion-label {
+    font-size: 14px !important; 
+    text-align: center;  
+}
+.cancel-booking-btn {
+    padding: 0px;
+    height: 50px;
+    border-radius: 10px !important;
+    overflow: hidden;
+    --background: #d1be9e;
+    color: #000;
+    max-width: 360px;
+    margin: 0px auto;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+
+
+.pie-chart {
+	background:
+		radial-gradient(
+			circle closest-side,
+			white 0,
+			white 54.51%,
+			transparent 54.51%,
+			transparent 69%,
+			white 0
+		),
+		conic-gradient(
+			from 225deg,
+			#44312a 0,
+			#44312a 33.3%,
+			#e8dece 0,
+			#e8dece 100%
+	);
+	position: relative;
+	width: 100%;
+	min-height: 180px;
+	margin: 0;
+    min-width: 180px;
+    margin-left: -20px;
+	
+}
+
+.pie-chart figcaption {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	font-size: smaller;
+	text-align: right;
+}
+.pie-chart span:after {
+	display: inline-block;
+	content: "";
+	width: 0.8em;
+	height: 0.8em;
+	margin-left: 0.4em;
+	height: 0.8em;
+	border-radius: 0.2em;
+	background: currentColor;
+}
+
+
+.loader-logo-img{
+    width: 38%;
+    max-width: 68px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0px auto;
+}

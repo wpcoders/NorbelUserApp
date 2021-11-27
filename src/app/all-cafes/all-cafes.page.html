@@ -1,0 +1,122 @@
+<ion-header class="norbel-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button class="menu-icon-2"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Norbel</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item lines="none" class="page-title-box  ion-no-padding"  style="--inner-padding-end: 0 !important;">
+    <ion-label>
+    {{cafe_name}}
+    </ion-label>
+  </ion-item>
+
+  <div class="page-pad-box">
+
+    <ion-card class="card-box reserve-table">    
+      <ion-card-content class="ion-no-padding">
+    
+          <ion-row>        
+          <ion-col size="12" (click)="doAddCafe()">
+             <ion-button expand="block" class="cancel-booking-btn">Add New Cafe</ion-button>                    
+          </ion-col>   
+        </ion-row>      
+      </ion-card-content>
+    </ion-card>
+
+<div class="add-cafe-content">
+
+
+  <ion-card class="card-box reserve-table" *ngFor="let item of cafeListData">    
+    <ion-card-content class="ion-no-padding">
+      <ion-row>
+        <ion-col size="8">       
+            <h1 class="offer-box-title">{{item.cafe_name}}    </h1>          
+        </ion-col>
+        <ion-col size="4">       
+        <h4 class="open-now-text" [ngStyle]="{'color': item.color}">{{item.status}}</h4>          
+      </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="4">
+            <div class="offer-img">
+              <img [src]="imagePath+item.cafe_logo">
+            </div>
+          </ion-col>
+          <ion-col size="8">
+            <div class="cafe-details">
+            <h5>Estimated Activity: {{item.activity}} </h5>
+            <p>{{item.cafe_description}}</p>
+             <ion-button expand="block" class="cancel-booking-btn"  (click)="doOpenNow(item.cafe_id)">Open</ion-button>   
+            </div>
+          </ion-col>   
+        </ion-row>     
+    </ion-card-content>
+  </ion-card>
+
+  
+  <!-- <ion-card class="card-box reserve-table">    
+    <ion-card-content class="ion-no-padding">
+      <ion-row>
+        <ion-col size="8">       
+          <h1 class="offer-box-title">Brewed Down </h1>          
+        </ion-col>
+        <ion-col size="4">       
+          <h4 class="open-now-text closed-now-text"> Closed</h4>          
+        </ion-col>
+      </ion-row>
+        <ion-row>
+          <ion-col size="4">
+            <div class="offer-img">
+              <img src="assets/img/logo-brewed-down.jpg">
+            </div>
+          </ion-col>
+          <ion-col size="8">
+            <div class="cafe-details">
+              <h5>Estimated Activity: Very Quiet </h5>
+              <p>Situated in the heart of Brisbane, this beautiful cafe is sure to make a great coffee.</p>
+              <ion-button expand="block" class="cancel-booking-btn">Open</ion-button>   
+            </div>
+          </ion-col>   
+        </ion-row>     
+    </ion-card-content>
+  </ion-card>  
+  <ion-card class="card-box reserve-table">    
+    <ion-card-content class="ion-no-padding">
+      <ion-row>
+        <ion-col size="8">       
+            <h1 class="offer-box-title">Another Cafe</h1>          
+        </ion-col>
+        <ion-col size="4">       
+          <h4 class="open-now-text"> Open Now</h4>          
+      </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="4">
+            <div class="offer-img">
+              <img src="assets/img/cafe-logo-img.jpg">
+            </div>
+          </ion-col>
+          <ion-col size="8">
+            <div class="cafe-details">
+            <h5>Estimated Activity: Very Quiet </h5>
+            <p>Based on app activity at this location we estimate it is currently very quiet resulting in low wait times and high table availability.</p>
+             <ion-button expand="block" class="cancel-booking-btn">Open</ion-button>   
+            </div>
+          </ion-col>   
+        </ion-row>     
+    </ion-card-content>
+  </ion-card>
+   -->
+  </div>
+  </div>
+
+</ion-content>
+
+<!-- <ion-footer class="page-footer-box">
+  <ion-button expand="block" class="norbel-btn" ></ion-button>
+</ion-footer> -->
